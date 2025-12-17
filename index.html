@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tally.ERP 9</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              tally: {
+                green: '#005e46',
+                lightGreen: '#4d8a78',
+                bg: '#ffffdb',
+                panel: '#fbfbe8',
+                border: '#8f8f8f',
+                selection: '#ffcc00',
+              }
+            },
+            fontFamily: {
+              mono: ['Consolas', 'Monaco', 'Courier New', 'monospace'],
+              sans: ['Arial', 'Helvetica', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #ffffdb;
+        overflow: hidden; /* App handles scrolling */
+      }
+      .tally-shadow {
+        box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+      }
+      .tally-inset {
+        box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+      }
+      /* Custom scrollbar to match retro feel */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-left: 1px solid #ccc;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border: 1px solid #a8a8a8;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
